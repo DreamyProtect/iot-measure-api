@@ -25,6 +25,10 @@ app.put('/measure/:id',
   measures.modify
 )
 
+app.delete('/measure/:id',
+  measures.delete
+)
+
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
 });
