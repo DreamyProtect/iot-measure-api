@@ -46,7 +46,21 @@ Returns a JSON object representing one measure
 ```
 POST /measure
 ```
-Add one measure to the array of the measures, this body should be formatted this way :
+Add one measure to the array of the measures, the request body should be formatted this way :
+```
+{
+  "unit": "celcius" || "fahrenheit",
+  "type": "temperature",
+  "name": "$name",
+  "value": $value
+}
+```
+
+### Modify one measure
+```
+PUT /measure/:id
+```
+Modify one measure in the array of the measures, the request body should be formatted this way :
 ```
 {
   "unit": "celcius" || "fahrenheit",
