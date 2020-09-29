@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "unit": "celcius",
+    "type": "temperature",
+    "name": "temperature room 54"
+  },
+  {
+    "id": 2,
+    "unit": "celcius",
+    "type": "temperature",
+    "name": "temperature room 51"
+  }
+]
