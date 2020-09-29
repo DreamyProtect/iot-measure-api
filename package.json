@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ENI-projects/iot-measure-api#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "joi": "^17.2.1",
     "prettier": "^2.1.2"
   },
   "devDependencies": {
