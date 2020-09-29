@@ -70,6 +70,12 @@ Modify one measure in the array of the measures, the request body should be form
 }
 ```
 
+### Delete one measure
+```
+DELETE /measure/:id
+```
+Deletes the measure with the id requested
+
 ## Author
 
 * Twitter: [@404MomNotFound](https://twitter.com/404MomNotFound)
