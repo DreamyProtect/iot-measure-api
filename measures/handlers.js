@@ -1,4 +1,4 @@
-const values = require('./measures.json')
+let values = require('./measures.json')
 
 module.exports = {
   getAllMeasures() {
@@ -23,5 +23,8 @@ module.exports = {
         measure.value = newValues.value;
       }
     })
+  },
+  deleteMeasure(id) {
+    values = values.filter(measure => measure.id !== parseInt(id));
   }
 }
