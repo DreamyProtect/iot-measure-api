@@ -14,3 +14,8 @@ exports.add = (req, res) => {
   handlers.addMeasure(req.body);
   res.sendStatus(204);
 }
+
+exports.modify = (req, res) => {
+  handlers.modifyMeasure(req.params.id, req.body);
+  res.sendStatus(204);
+}

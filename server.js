@@ -20,6 +20,11 @@ app.post('/measure',
   measures.add
 );
 
+app.put('/measure/:id',
+  validator.body(schemas.insertSchema),
+  measures.modify
+)
+
 app.listen(port, () => {
   console.log(`app listening at http://localhost:${port}`);
 });
