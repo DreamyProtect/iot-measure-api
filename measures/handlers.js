@@ -13,5 +13,15 @@ module.exports = {
       ...{"id": id},
       ...measure
     });
+  },
+  modifyMeasure(id, newValues) {
+    values.forEach(measure => {
+      if (measure.id === parseInt(id)) {
+        measure.name = newValues.name;
+        measure.type = newValues.type;
+        measure.unit = newValues.unit;
+        measure.value = newValues.value;
+      }
+    })
   }
 }
