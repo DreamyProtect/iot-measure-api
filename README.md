@@ -12,9 +12,9 @@
   </a>
 </p>
 
-> A REST API to manipulate measures
+> A REST API written in JavaScript using node, express and Joi to manipulate measures.
 
-### 🏠 [Homepage](https://github.com/ENI-projects/iot-measure-api#readme)
+### 🏠 [Homepage](https://github.com/DreamyProtect/iot-measure-api#readme)
 
 ## Install
 
@@ -28,10 +28,32 @@ npm install
 node server.js
 ```
 
-## Run tests
+## Endpoints
 
-```sh
-npm run test
+### Get all measures
+```
+GET /measures
+```
+Returns an array of JSON objects, each representing one measure.
+
+### Get one measure
+```
+GET /measure/:id
+```
+Returns a JSON object representing one measure
+
+### Add one measure
+```
+POST /measure
+```
+Add one measure to the array of the measures, this body should be formatted this way :
+```
+{
+  "unit": "celcius" || "fahrenheit",
+  "type": "temperature",
+  "name": "$name",
+  "value": $value
+}
 ```
 
 ## Author
@@ -41,7 +63,7 @@ npm run test
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ENI-projects/iot-measure-api/issues). 
+This repository was made during a class session at the ENI CS School, and is not made to receive any contribution, however, if you have any question or need any advice concerning the code, I'll gladly answer you, so feel free to create [issues](https://github.com/DreamyProtect/iot-measure-api/issues)
 
 ## Show your support
 
