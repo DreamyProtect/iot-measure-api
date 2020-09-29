@@ -1,0 +1,8 @@
+*
+
+!LICENSE
+!.gitignore
+!package.json
+!package-lock.json
+!README.md
+!server.js
