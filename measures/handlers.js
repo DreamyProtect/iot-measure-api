@@ -1,8 +1,15 @@
 let values = require('./measures.json')
+const mongo = require('../mongo')
+const collection = 'measures'
 
 module.exports = {
   getAllMeasures() {
-    return values;
+    return mongo.CLIENT.then(db => {
+      return db.db(mongo.DB)
+      .collection(collection)
+      .find({})
+      .toArray()
+    });
   },
   getOneMeasure(id) {
     return values.find(measure => measure.id === parseInt(id));
